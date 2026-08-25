@@ -287,9 +287,9 @@ This SQL project provides a comprehensive analysis of a retail dataset, offering
 
 ## Author
 
-**Upesh Jeengar**
+**Siba Sankar Mallick**
 
-[GitHub Profile](https://github.com/upeshjeengar)
+[GitHub Profile](https://github.com/SibaDakshana-12)
 
 ---
 
