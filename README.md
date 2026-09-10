@@ -1,6 +1,6 @@
 # Retail Data Analysis Using SQL
 
-SQL-based analysis of retail transactions to understand customer behavior, product performance, sales, returns, and store performance.
+SQL-based analysis of retail transactions to understand customer behavior, product performance, sales, returns, and store performance, with an interactive Streamlit dashboard for visualization.
 
 ## Overview
 
@@ -15,6 +15,7 @@ The analysis covers:
 - Store-type performance
 - Transaction trends over time
 - Data quality and exploratory analysis
+- Interactive dashboard visualization
 
 ## Dataset
 
@@ -101,6 +102,23 @@ The project performs SQL-based EDA to understand:
 - Monthly quantity sold
 - Yearly return trends
 
+## Interactive Dashboard
+
+The project includes an interactive **Streamlit dashboard** for exploring key retail metrics and business trends.
+
+The dashboard provides:
+
+- Revenue and transaction KPIs
+- Revenue by product category
+- Revenue by store type
+- Monthly revenue trends
+- Top sub-categories by revenue
+- Quantity sold by category
+- Customer distribution by gender and city
+- Return value by category
+- Monthly return trends
+- Interactive category and store-type filters
+
 ## SQL Concepts Used
 
 The project demonstrates practical use of:
@@ -128,18 +146,31 @@ Retail-Data-Case_study-using-Sql/
 │
 ├── answers.sql
 ├── retail_analysis.sql
+├── app.py
+├── requirements.txt
 └── README.md
 ```
 
 ### SQL Files
 
+**`answers.sql`**
+
+Contains the database setup, table creation, CSV data loading, and original case-study query solutions.
+
 **`retail_analysis.sql`**
 
 Contains the structured SQL analysis, including EDA, data quality checks, customer analysis, product analysis, sales, returns, store performance, and time-based analysis.
 
-**`answers.sql`**
+### Dashboard
 
-Contains the database setup, table creation, CSV data loading, and original case-study query solutions.
+**`app.py`**
+
+Contains the Streamlit application used to build the interactive retail analytics dashboard.
+
+**`requirements.txt`**
+
+Contains the Python dependencies required to run the dashboard.
+
 
 ## How to Run
 
@@ -172,7 +203,24 @@ Transactions
 retail_analysis.sql
 ```
 
-6. Execute the queries in SQL Server Management Studio (SSMS).
+6. Execute the queries using MySQL Workbench or a MySQL client.
+
+
+## Streamlit Dashboard
+
+1. Install the required Python packages:
+
+```text
+pip install -r requirements.txt
+```
+
+2. Run the dashboard:
+
+```text
+python -m streamlit run app.py
+```
+
+3. The dashboard will open locally in your browser.
 
 ## Key Business Questions
 
@@ -184,15 +232,15 @@ The analysis answers questions such as:
 - Which customers make frequent purchases?
 - Which category has the highest return value?
 - Which store type sells the highest quantity?
-- Which categories perform above the overall average?
+- Which categories have above-average transaction value?
 - How do sales and returns change over time?
 - Which sub-categories contribute most to revenue?
 
 ## Conclusion
 
-This project demonstrates how SQL can be used to transform raw retail transaction data into business-oriented insights.
+This project demonstrates how SQL and Python-based visualization can be used to transform raw retail transaction data into business-oriented insights.
 
-The analysis combines data exploration, customer analysis, product performance, revenue analysis, return analysis, and time-based trends to support data-driven decision making.
+The analysis combines data exploration, customer analysis, product performance, revenue analysis, return analysis, time-based trends, and interactive visualization to support data-driven decision making.
 
 ## Author
 
